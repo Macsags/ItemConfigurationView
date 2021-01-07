@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ItemConfigurationView">
+        <attr name="backgroundWith" format="integer" />
+        <attr name="leftText" format="string" />
+        <attr name="leftIcon" format="integer" />
+        <attr name="rightIcon" format="integer" />
+        <attr name="rightText" format="string" />
+<!--        <attr name="rightEditTextHint" format="string" />-->
+        <attr name="rightIconText" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="hintText" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="clickable" format="boolean" />
+        <attr name="editTextClickable" format="boolean" />
+        <attr name="isShowUnderLine" format="boolean" />
+        <attr name="rightStyle" format="enum">
+
+            <enum name="iconGone" value="0" />
+            <enum name="iconClick" value="1" />
+            <enum name="iconCheck" value="2" />
+            <enum name="iconSwitch" value="3" />
+            <enum name="iconText" value="4" />
+        </attr>
+        <attr name="leftStyle" format="enum">
+            <enum name="radioButton" value="1" />
+            <enum name="Level1" value="2" />
+            <enum name="Level2" value="3" />
+        </attr>
+        <attr name="radioButtonName" format="string" />
+        <attr name="edtNumber" format="boolean" />
+    </declare-styleable>
+
+</resources>

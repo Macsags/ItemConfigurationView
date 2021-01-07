@@ -1,0 +1,3 @@
+include ':itemconfigure'
+include ':app'
+rootProject.name = "ItemConfigurationView"
