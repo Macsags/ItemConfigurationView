@@ -2,13 +2,13 @@
 
 简介：
 -------
-条目配置，设置配置， 类似设置界面条目控件
-配置头图片 title  edittext 尾单选框 多选控  switch  单位 等等
+条目配置、设置配置、 类似设置界面条目控件
+配置头图片、title 、 edittext、 尾单选框 、多选控 、 switch 、 单位 等等
 </br>
 ****
 示例：
 -------
-![](https://img-blog.csdnimg.cn/20200824180331844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMzY4MTI5,size_16,color_FFFFFF,t_70)
+![](https://img-blog.csdnimg.cn/20200824180331844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMzY4MTI5,size_16,color_FFFFFF,t_70"图片")
 
 [图片地址](https://img-blog.csdnimg.cn/20200824180331844.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyMzY4MTI5,size_16,color_FFFFFF,t_70)
 </br>
@@ -53,18 +53,55 @@ allprojects {
 -------
 ```
     XML里加自定义view
-     <com.macsags.itemconfigure.ItemConfigureView
+      //图1
+      <com.macsags.itemconfigure.ItemConfigureView
         android:id="@+id/ic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:leftText="11111"
-        app:rightText ="1111"
-        app:rightIconText="个"
-        app:backgroundWith ="@color/black_666666"
+        app:leftIcon = "@mipmap/gerenxinxi"
+        app:leftText="个人信息"
+        app:rightStyle="iconClick"
+        app:textColor="@color/black_333333" />
+	//图2
+	<com.macsags.itemconfigure.ItemConfigureView
+        android:id="@+id/ic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIcon = "@mipmap/gerenxinxi"
+        app:leftText="姓名"
+        app:rightText ="张三"
+        app:rightStyle="iconGone"
+        app:textColor="@color/black_333333" />
+	//图3
+	<com.macsags.itemconfigure.ItemConfigureView
+        android:id="@+id/ic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIcon = "@mipmap/gerenxinxi"
+        app:leftText="张三的铅笔"
+        app:rightText ="3"
+        app:rightIconText ="支"
         app:rightStyle="iconText"
         app:textColor="@color/black_333333" />
-
-    Activity里
+	//图4
+	<com.macsags.itemconfigure.ItemConfigureView
+        android:id="@+id/ic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIcon = "@mipmap/gerenxinxi"
+        app:leftText="值日生"
+        app:rightText ="张三"
+        app:rightStyle="iconCheck"
+        app:textColor="@color/black_333333" />
+	//图5
+	<com.macsags.itemconfigure.ItemConfigureView
+        android:id="@+id/ic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIcon = "@mipmap/gerenxinxi"
+        app:leftText="飞行模式"
+        app:rightStyle="iconSwitch"
+        app:textColor="@color/black_333333" />
        
 ```
 ****
